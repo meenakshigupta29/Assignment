@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.css';
+ import App from './App';
+import { Container,Row,Col } from 'react-bootstrap';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,8 +11,19 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+// export default()=>
+// <div>
+// <Container>
+//       <Row>
+//         <Col>1 of 2</Col>
+//         <Col>2 of 2</Col>
+//       </Row>
+//       <Row>
+//         <Col>1 of 3</Col>
+//         <Col>2 of 3</Col>
+//         <Col>3 of 3</Col>
+//       </Row>
+//     </Container>
+// </div>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
