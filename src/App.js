@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+
 // import logo from './logo.svg';
 import './App.css';
+// import { Link } from 'react-router';
 
  
 
@@ -69,6 +71,10 @@ import ReactPlayer from  'react-player';
                 <h1 className="icon1"><FontAwesomeIcon icon={faEnvelope}/></h1>
                 <h1 className="icon1"><FontAwesomeIcon icon={faEnvelope}/></h1>
             </div>
+            <Button href="#">Link</Button> <Button type="submit">Button</Button>{' '}
+  <Button as="input" type="button" value="Input" />{' '}
+  <Button as="input" type="submit" value="Submit" />{' '}
+  <Button as="input" type="reset" value="Reset" />
             </Col>
             {/* <Col lg={2}>
               <h2>Recent Work</h2>
@@ -90,20 +96,32 @@ import ReactPlayer from  'react-player';
   </Form.Group>
          
   <Form.Group controlId="formBasicPassword">
+  <span className="form">
+          
     <Form.Label>Password</Form.Label>
     <Form.Control type="password"  />
+    </span>
+
   </Form.Group>
   
   <Form.Group controlId="formBasicPassword">
+  <span className="form">
+
     <Form.Label>Mobile</Form.Label>
     <Form.Control type="mobile"  />
+    </span>
   </Form.Group>
   
   <Form.Group controlId="formBasicPassword">
+  <span className="form">
+
     <Form.Label>Url</Form.Label>
     <Form.Control type="url"  />
+    </span>
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlSelect2">
+  <span className="form">
+    
     <Form.Label>Services</Form.Label>
     <Form.Control as="select" multiple>
       <option>Logo Design</option>
@@ -112,20 +130,26 @@ import ReactPlayer from  'react-player';
       <option>4</option>
       <option>5</option> */}
     </Form.Control>
+    </span>
     </Form.Group>
     <Form.Group controlId="Startdate">
-    <Form.Label>Start Date</Form.Label>
+    <span className="form">
+      
+    <Form.Label>StartDate</Form.Label>
     <Form.Control type="date"  name="date"  />
     <span><FontAwesomeIcon icon={faCalendar}/></span>
+    </span>
   </Form.Group>
   
   <Form.Group controlId="exampleForm.ControlTextarea1">
+    <span className="form">
     <Form.Label>Details</Form.Label>
-    <Form.Control as="textarea" rows="3" />
+    <Form.Control as="textarea" rows="3" placeholder="Tell us more about your project" />
+    </span>
   </Form.Group>
   
-  <Button variant="primary" type="submit" className="text-center">
-    Get a free quote
+  <Button variant="primary" type="submit" className="text-center" size="lg">
+    Get A Free Quote
   </Button>
 
 </Form></Col>
@@ -152,7 +176,11 @@ import ReactPlayer from  'react-player';
   </Tab> */}
   <div class="col3">
     <ul>
-      <li><a href="#Happy new year"></a> Happy new year</li>
+      <li> Happy new year</li>
+      <li> Top 10 design of 2011 </li>
+      <li> How to create a fire effect on photoshop</li>
+      <li> Best Typography Tutorial</li>
+      <li>New Product Launch</li>
     </ul>
   </div>
             </Col>
@@ -163,6 +191,7 @@ import ReactPlayer from  'react-player';
         
             <span className="icon3"><h1 className="i"><FontAwesomeIcon className="icon" icon ={faUser}/></h1><span>This guys rocks next apple in marking<br/></span></span>
            <span className="icon3"> <h1 className="i"><FontAwesomeIcon icon={faUser}/></h1><span>They made me fall in love with open source<br/></span></span>
+            
             </Col>
             <Col><h2>Tag Cloud</h2>
             Company Anniversary Released Featured Wordpress

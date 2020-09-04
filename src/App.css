@@ -66,6 +66,7 @@ height:400%;
 width: 400%;
   }
   .form{
-    display:inline-flex;
+    display:flex;
     direction:row;
+    justify-content: space-between;
   }
